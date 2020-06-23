@@ -8,9 +8,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
-public class Menu extends AppCompatActivity {
+public class MenuActivity extends AppCompatActivity {
     CardView btnProfile, btnInputBarang, btnInputSupplier;
     Button btnKeluar;
     SharedPreference sp;
@@ -29,7 +28,7 @@ public class Menu extends AppCompatActivity {
         btnProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent inten = new Intent(Menu.this, Profile.class);
+                Intent inten = new Intent(MenuActivity.this, Profile.class);
                 startActivity(inten);
             }
         });
@@ -37,7 +36,7 @@ public class Menu extends AppCompatActivity {
         btnInputBarang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent inten = new Intent(Menu.this, InputBarang.class);
+                Intent inten = new Intent(MenuActivity.this, InputBarang.class);
                 startActivity(inten);
             }
         });
@@ -45,7 +44,7 @@ public class Menu extends AppCompatActivity {
         btnInputSupplier.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent inten = new Intent(Menu.this, InputSupplier.class);
+                Intent inten = new Intent(MenuActivity.this, InputSupplier.class);
                 startActivity(inten);
             }
         });
@@ -58,4 +57,5 @@ public class Menu extends AppCompatActivity {
             }
         });
     }
+
 }

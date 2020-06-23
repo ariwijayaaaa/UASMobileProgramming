@@ -30,7 +30,7 @@ public class Profile extends AppCompatActivity {
         BtnKeluar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent inten = new Intent(Profile.this, Menu.class);
+                Intent inten = new Intent(Profile.this, MenuActivity.class);
                 startActivity(inten);
             }
         });

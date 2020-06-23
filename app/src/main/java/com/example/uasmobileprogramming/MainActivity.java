@@ -27,7 +27,11 @@ public class MainActivity extends AppCompatActivity {
 
         username =(EditText)findViewById(R.id.txtusername);
         password =(EditText)findViewById(R.id.txtpassword);
+
     }
+
+
+
     public void checklogin(View v) {
         final String email = username.getText().toString();
         switch (v.getId()) {
@@ -45,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         if (isValidEmail(email) && isValidPassword(pass)) {
             sp.save(context, "username", email);
             Toast.makeText(getApplicationContext(), "Berhasil login!",Toast.LENGTH_LONG).show();
-            Intent ExplicitIntent=new Intent(MainActivity.this, Menu.class);
+            Intent ExplicitIntent=new Intent(MainActivity.this, MenuActivity.class);
             startActivity(ExplicitIntent);
         }
     }
@@ -55,14 +59,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public boolean isValidPassword (String password) {
-        if (password != null && password.equals("18101056")) {
+        if (password != null && password.equals("000")) {
             return true;
         }
         return false;
     }
 
     public boolean isValidEmail(String username) {
-        if (username != null && username.equals("18101056")) {
+        if (username != null && username.equals("000")) {
             return true;
         }
         return false;
