@@ -59,14 +59,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public boolean isValidPassword (String password) {
-        if (password != null && password.equals("000")) {
+        if (password != null && password.equals("18101056")) {
             return true;
         }
         return false;
     }
 
     public boolean isValidEmail(String username) {
-        if (username != null && username.equals("000")) {
+        if (username != null && username.equals("18101056")) {
             return true;
         }
         return false;

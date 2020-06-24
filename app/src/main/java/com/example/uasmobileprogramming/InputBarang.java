@@ -37,7 +37,7 @@ public class InputBarang extends AppCompatActivity {
 
     public void RefreshList(){
         SQLiteDatabase db = dbHelper.getReadableDatabase();
-        cursor = db.rawQuery("Select * FROM barang",null);
+        cursor = db.rawQuery("select * FROM barang",null);
         daftar = new String[cursor.getCount()];
         cursor.moveToFirst();
         for (int cc=0; cc<cursor.getCount(); cc++){
