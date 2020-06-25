@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class TambahSupplier extends AppCompatActivity {
 
-    sqlsupplier dbHelper;
+    sql dbHelper;
     Button button;
     EditText namasupplier, alamat, notelp;
 
@@ -19,7 +19,7 @@ public class TambahSupplier extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tambah_supplier);
-        dbHelper = new sqlsupplier(this);
+        dbHelper = new sql(this);
 
         namasupplier=(EditText) findViewById(R.id.namasupplier);
         alamat=(EditText) findViewById(R.id.alamat);

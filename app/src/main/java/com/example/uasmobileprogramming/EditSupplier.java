@@ -14,7 +14,7 @@ public class EditSupplier extends AppCompatActivity {
 
     EditText namasupplier, alamat, notelp;
     Button button;
-    sqlsupplier dbHelper;
+    sql dbHelper;
     protected Cursor cursor;
 
     @Override
@@ -22,7 +22,7 @@ public class EditSupplier extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_supplier);
 
-        dbHelper = new sqlsupplier(this);
+        dbHelper = new sql(this);
         namasupplier=(EditText) findViewById(R.id.namasupplier);
         alamat=(EditText) findViewById(R.id.alamat);
         notelp=(EditText) findViewById(R.id.notelp);

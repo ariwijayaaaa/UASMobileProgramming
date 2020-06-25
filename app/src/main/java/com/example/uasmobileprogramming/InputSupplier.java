@@ -19,7 +19,7 @@ public class InputSupplier extends AppCompatActivity {
 
     String[] daftar;
     ListView ListView02;
-    sqlsupplier dbHelper;
+    sql dbHelper;
     protected Cursor cursor;
     public static InputSupplier is;
     Menu menu;
@@ -30,7 +30,7 @@ public class InputSupplier extends AppCompatActivity {
         setContentView(R.layout.activity_input_supplier);
 
         is = this;
-        dbHelper = new sqlsupplier(this);
+        dbHelper = new sql(this);
         RefreshList();
     }
 
