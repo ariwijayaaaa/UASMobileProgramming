@@ -5,67 +5,102 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".EditBarang"
+    android:padding="40dp"
+    android:background="@color/colorPrimary"
     android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nama Barang"
+        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="5dp"
         android:id="@+id/txtnamabarang"/>
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:text=""
+        android:background="@drawable/style_white"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:fontFamily="sans-serif"
         android:id="@+id/namabarang"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Kategori"
+        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="5dp"
         android:id="@+id/txtkategori"/>
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:text=""
+        android:background="@drawable/style_white"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:fontFamily="sans-serif"
         android:id="@+id/kategori"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Harga Beli"
+        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="5dp"
         android:id="@+id/txthargabeli"/>
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:text=""
+        android:background="@drawable/style_white"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:fontFamily="sans-serif"
         android:id="@+id/hargabeli"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Harga Jual"
+        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="5dp"
         android:id="@+id/txthargajual"/>
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:text=""
+        android:background="@drawable/style_white"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:fontFamily="sans-serif"
         android:id="@+id/hargajual"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Jumlah"
+        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="5dp"
         android:id="@+id/txtjumlah"/>
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:text=""
+        android:background="@drawable/style_white"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="10dp"
+        android:fontFamily="sans-serif"
         android:id="@+id/jumlah"/>
+
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Simpan"
+        android:background="@drawable/style_button_menu_white"
+        android:layout_gravity="center"
         android:id="@+id/button"/>
 
 </LinearLayout>

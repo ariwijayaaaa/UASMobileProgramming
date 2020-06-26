@@ -5,26 +5,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".InputSupplier"
+    android:background="@color/colorPrimary"
+    android:paddingTop="20dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
     android:orientation="vertical">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:fontFamily="sans-serif-black"
-        android:text="DAFTAR SUPPLIER"
-        android:textSize="20dp"
-        android:textColor="@color/colorPrimary"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
-        />
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="DATA SUPPLIER"
+            android:textSize="20sp"
+            android:textColor="#f8f8f8"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginBottom="10dp"
+            />
+    </LinearLayout>
 
     <ListView
-        android:id="@+id/ListView02"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp"
-        android:paddingBottom="40dp"
-        android:textColor="@color/colorPrimary"/>
+        android:background="@drawable/style_white"
+        android:textColor="#f8f8f8"
+        android:fontFamily="sans-serif-black"
+        android:textSize="20sp"
+        android:id="@+id/ListView02">
+
+    </ListView>
 </LinearLayout>

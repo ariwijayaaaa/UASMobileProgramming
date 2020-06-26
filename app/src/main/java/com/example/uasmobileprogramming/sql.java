@@ -31,7 +31,7 @@ public class sql extends SQLiteOpenHelper {
         sql = "INSERT INTO barang(id,nama_barang,kategori,harga_beli,harga_jual,stok)" +
                 "          VALUES(2,'Kopi Kapal Api','Kopi','1000','1500','2');";
         db.execSQL(sql);
-        
+
 
         String sql2 = "create table supplier (id integer primary key autoincrement," +
                 "            nama_supplier text null," +
