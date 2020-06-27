@@ -62,10 +62,7 @@ public class InputBarang extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int item) {
                         switch (item){
                             case 0:
-                                Intent inten= new Intent(InputBarang.this, EditBarang.class);
-                                inten.putExtra("nama_barang", selection);
-                                startActivity(inten);
-                                break;
+                                Intent inten
                             case 1:
                                 SQLiteDatabase db=dbHelper.getWritableDatabase();
                                 String sql="DELETE from barang where nama_barang = '" + selection + "'";
@@ -74,7 +71,10 @@ public class InputBarang extends AppCompatActivity {
                                 break;
 
                         }
-                    }
+                    }= new Intent(InputBarang.this, EditBarang.class);
+                                inten.putExtra("nama_barang", selection);
+                                startActivity(inten);
+                                break;
                 });
                 builder.create().show();
             }

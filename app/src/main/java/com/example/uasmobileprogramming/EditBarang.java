@@ -12,21 +12,21 @@ import android.widget.Toast;
 
 public class EditBarang extends AppCompatActivity {
     EditText namabarang, kategori, hargabeli, hargajual, jumlah;
-    Button button;
-    sql dbHelper;
-    protected Cursor cursor;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_barang);
+        Button button;
+        sql dbHelper;
+        protected Cursor cursor;
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_edit_barang);
 
-        dbHelper = new sql(this);
-        namabarang=(EditText) findViewById(R.id.namabarang);
-        kategori=(EditText) findViewById(R.id.kategori);
-        hargabeli=(EditText) findViewById(R.id.hargabeli);
-        hargajual=(EditText) findViewById(R.id.hargajual);
-        jumlah=(EditText) findViewById(R.id.jumlah);
-        button = (Button) findViewById(R.id.button);
+            dbHelper = new sql(this);
+            namabarang=(EditText) findViewById(R.id.namabarang);
+            kategori=(EditText) findViewById(R.id.kategori);
+            hargabeli=(EditText) findViewById(R.id.hargabeli);
+            hargajual=(EditText) findViewById(R.id.hargajual);
+            jumlah=(EditText) findViewById(R.id.jumlah);
+            button = (Button) findViewById(R.id.button);
 
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         final String sql = "SELECT * from barang where nama_barang = '"+ getIntent().getStringExtra("nama_barang")+"'";

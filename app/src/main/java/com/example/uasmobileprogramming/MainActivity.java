@@ -33,21 +33,21 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void checklogin(View v) {
-        final String email = username.getText().toString();
+        final String nim = username.getText().toString();
         switch (v.getId()) {
             case R.id.login:
                 hideKeybaord(v);
                 break;
         }
-        if (!isValidEmail(email)) {
+        if (!isValidNim(nim)) {
             username.setError("Username yang anda masukan salah!");
         }
         final String pass = password.getText().toString();
         if (!isValidPassword(pass)) {
             password.setError("Password yang anda masukan salah!");
         }
-        if (isValidEmail(email) && isValidPassword(pass)) {
-            sp.save(context, "username", email);
+        if (isValidNim(nim) && isValidPassword(pass)) {
+            sp.save(context, "username", nim);
             Toast.makeText(getApplicationContext(), "Berhasil login!",Toast.LENGTH_LONG).show();
             Intent ExplicitIntent=new Intent(MainActivity.this, MenuActivity.class);
             startActivity(ExplicitIntent);
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         return false;
     }
 
-    public boolean isValidEmail(String username) {
+    public boolean isValidNim(String username) {
         if (username != null && username.equals("18101056")) {
             return true;
         }

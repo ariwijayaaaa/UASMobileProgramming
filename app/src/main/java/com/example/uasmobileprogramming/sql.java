@@ -41,11 +41,11 @@ public class sql extends SQLiteOpenHelper {
         db.execSQL(sql2);
 
         sql2 = "INSERT INTO supplier(id,nama_supplier,alamat,no_telp)" +
-                "            VALUES(1,'CV. Kopi','B','087');";
+                "            VALUES(1,'CV. Kopi','Jln. Batang Hari Gang.8 No. 7A','087862256245');";
         db.execSQL(sql2);
 
         sql2 = "INSERT INTO supplier(id,nama_supplier,alamat,no_telp)" +
-                "            VALUES(2,'CV. Ayam','A','085');";
+                "            VALUES(2,'CV. Ayam','Jln. Batang Hari gang 7 No.8A','085862245246');";
         db.execSQL(sql2);
 
     }
